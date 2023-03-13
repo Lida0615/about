@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+.container {
+  max-width: 1143px;
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: aquamarine; */
+}
+/* header  --------------------*/
+header {
+  /* display: none; */
+}
+.header_navbar {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background-color: chartreuse; */
+}
+.header_menu {
+  display: flex;
+  gap: 30px;
+}
+.header_menu__link {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #433840;
+}
+.logo {
+  width: 224px;
+}
+/* smoothie */
+
+.about {
+  margin: 0 auto;
+  margin-top: 12px;
+  background: url(../img/about.jpg) no-repeat center;
+  text-align: center;
+  position: relative;
+  max-width: 1820px;
+  width: 100%;
+  /* display: none; */
+}
+
+.cloud::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  background: url(../img/top.svg) no-repeat center;
+  max-width: 1820px;
+  width: 100%;
+  margin: 0 auto;
+  height: 130px;
+}
+.cloud::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  background: url(../img/bottom.svg) no-repeat center;
+  max-width: 1820px;
+  width: 100%;
+  margin: 0 auto;
+  height: 110px;
+}
+.about_items {
+  padding-top: 150px;
+  padding-bottom: 135px;
+}
+.about h2 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 62px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.about p {
+  font-family: "Waiting for the Sunrise";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 50px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+/* smothie */
+.smoothie_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.smoothie_item {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.smoothie_item_article {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.smoothie_item_article h3 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  color: #433840;
+}
+.smoothie_item_article p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* or 160% */
+
+  color: #9a9a9a;
+}
+.smoothie_image {
+  max-width: 380px;
+  width: 100%;
+  margin-left: 47px;
+  margin-right: 40px;
+}
+
+/* fruit */
+.fruit {
+  background: #fea3ac;
+  margin: 0 auto;
+  margin-top: 60px;
+
+  position: relative;
+  max-width: 1820px;
+  width: 100%;
+}
+.fruit_items {
+  padding-top: 190px;
+  padding-bottom: 190px;
+  display: flex;
+  justify-content: space-between;
+}
+.fruit_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.fruit_item span {
+  font-family: "Waiting for the Sunrise";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 99px;
+
+  color: #dfeeb6;
+}
+.fruit_item p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+/* team */
+.team {
+  /* display: none; */
+}
+.team_title {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 62px;
+  /* identical to box height */
+
+  color: #433840;
+  text-align: center;
+}
+.team_subtitle {
+  font-family: "Waiting for the Sunrise";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 50px;
+  /* identical to box height */
+  text-align: center;
+  color: #f7a1a8;
+}
+.team_items {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 23px;
+  min-height: 800px;
+}
+
+.team_item {
+  width: calc(50% - 12px - 165px);
+  display: flex;
+}
+.team_item:nth-child(1),
+.team_item:nth-child(4) {
+  background: #c9e3f4;
+  border-radius: 5px;
+}
+.team_item:nth-child(3),
+.team_item:nth-child(4) {
+  flex-direction: row-reverse;
+}
+/* уменьшаем item  */
+
+.team_item:nth-child(1) .team_item__img > img,
+.team_item:nth-child(2) .team_item__img > img {
+  margin-left: -165px;
+}
+.team_item:nth-child(3) .team_item__img > img,
+.team_item:nth-child(4) .team_item__img > img {
+  margin-right: -165px;
+}
+.team_item:nth-child(1) {
+  margin-left: 165px;
+}
+.team_item:nth-child(4) {
+  margin-right: 165px;
+}
+/* уменьшаем item  */
+.team_item:nth-child(2),
+.team_item:nth-child(3) {
+  background: #dfeeb6;
+  border-radius: 5px;
+}
+
+/* data */
+.team_item:nth-child(1) .team_item__data,
+.team_item:nth-child(2) .team_item__data {
+  margin: 74px 20px 83px 7px;
+}
+.team_item:nth-child(3) .team_item__data,
+.team_item:nth-child(4) .team_item__data {
+  margin: 84px 17px 83px 22px;
+  text-align: right;
+}
+
+.team_item .team_item__data p {
+  margin-top: 14px;
+  margin-bottom: 16px;
+}
+
+/* data */
+.team_item__img > img {
+  width: 330px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.team_item__social {
+  width: 106px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team_item:nth-child(3) .team_item__data .team_item__social,
+.team_item:nth-child(4) .team_item__data .team_item__social {
+  margin-left: auto;
+}
+/* text */
+.team_item__data > h3 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.team_item__data > h4 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #433840;
+}
+.team_item__data > p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  /* or 167% */
+
+  color: #433840;
+}
+
+/* footer */
+
+footer {
+  margin-top: 150px;
+  display: none;
+}
+
+.footer_contact {
+  background: url(../img/footer-contact.jpg) no-repeat center;
+  padding-top: 82px;
+  padding-bottom: 60px;
+}
+.f_c__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f_c__item > h4 {
+  margin-bottom: 25px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.f_c__item__list {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.f_c__item__list span {
+  color: #dfeeb6;
+}
+
+.f_c__item__link {
+  display: flex;
+  flex-direction: column;
+}
+.f_c__item__link a {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  /* or 175% */
+
+  color: #ffffff;
+}
+
+.f_c__item__photos {
+  width: 343px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+.f_c__item__photos img {
+  width: 97px;
+}
+.footer_end {
+  background: #433840;
+}
+/* svg {
+  background: #fff;
+} */
